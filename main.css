@@ -686,6 +686,7 @@ body.dark-mode .login_form::before {
     inset: 0;
 
     background: rgba(0, 0, 0, 0.45);
+    border-radius: inherit;
 
     z-index: 0;
 
@@ -1875,33 +1876,28 @@ body.dark-mode .stock-badge.out-of-stock {
 /* =========================================================
    LOGIN + SIGNUP MODALS
    ========================================================= */
-
 .login,
 .signup {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100vw;
     height: 100vh;
-    min-height: 100vh;
-    z-index: 10000;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 0;
+    padding: 30px;
     margin: 0;
 
-    background: rgba(0, 0, 0, 0.55);
+    /* Corrected path — adjust to match your folder structure */
+    background-image: url("../image/login_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    z-index: 10000;
     visibility: hidden;
     opacity: 0;
-
-    transition:
-        opacity 0.3s ease,
-        visibility 0.3s ease;
-
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     box-sizing: border-box;
 }
 
@@ -1910,8 +1906,6 @@ body.dark-mode .stock-badge.out-of-stock {
     visibility: visible;
     opacity: 1;
 }
-
-
 
 .close-login,
 .close-signup {
@@ -1947,21 +1941,24 @@ body.dark-mode .stock-badge.out-of-stock {
 
 .login_form {
     width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
-    background-image: url("image/loging_bg.png");
+
+    /* Same corrected path as above */
+    background-image: url("/image/login_bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     position: relative;
-    border-radius: 0;
+    border-radius: 20px;
     overflow-y: auto;
-    box-shadow: none;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
 }
 
 .login_form .left {
@@ -3165,6 +3162,11 @@ body.dark-mode .user-menu-links a:hover {
 }
 
 @media (max-width: 480px) {
+    .login,
+    .signup {
+        padding: 12px;
+    }
+
     section nav {
         gap: 5px;
     }
