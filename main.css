@@ -1894,7 +1894,7 @@ body.dark-mode .stock-badge.out-of-stock {
     z-index: 1000;
 
     /* الصورة تغطي الشاشة كلها */
-    background-image: url("image/login.png");
+    background-image: url("/image/login.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
