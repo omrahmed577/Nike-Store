@@ -1876,13 +1876,13 @@ body.dark-mode .stock-badge.out-of-stock {
 /* =========================================================
    LOGIN + SIGNUP MODALS
    ========================================================= */
-@media (max-width: 400px) {
+
 .login,
 .signup {
     position: fixed;
     inset: 0;
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     display: flex;
@@ -1943,7 +1943,7 @@ body.dark-mode .stock-badge.out-of-stock {
     background: var(--primary-color);
     transform: rotate(90deg);
 }
-}
+
 
 /* =========================================================
    LOGIN FORM
