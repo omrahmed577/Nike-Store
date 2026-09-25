@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover stylish Nike shoes with fast delivery and excellent customer service."
+    >
+
+    <title>Shoes - Just Do It</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="image/logo.png" type="image/png">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    >
+
+ <script type="module" src="./js/main.js"></script>
+    </head>
+
+<body>
+
+    <!-- =========================================================
+         NAVBAR + HOME
+    ========================================================== -->
+
+    <section id="Home" aria-label="Home section">
+
+        <nav aria-label="Main navigation">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#Home" aria-label="Go to homepage">
+                    <h1>Shoe<span>s</span></h1>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul>
+                <li>
+                    <a href="#Home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#Products">Products</a>
+                </li>
+
+                <li>
+                    <a href="#About">About</a>
+                </li>
+
+                <li>
+                    <a href="#Review">Review</a>
+                </li>
+
+                <li>
+                    <a href="#Services">Services</a>
+                </li>
+            </ul>
+
+
+
+            
+            <!-- Navbar Icons -->
+            <div class="icons">
+
+                <!-- Wishlist -->
+                <button
+                    type="button"
+                    class="wishlist-icon-wrapper"
+                    id="open-wishlist-btn"
+                    aria-label="Open wishlist"
+                    aria-controls="wishlist-drawer"
+                    aria-expanded="false"
+                >
+                    <i
+                        class="fa-solid fa-heart"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span
+                        class="cart-badge"
+                        id="wishlist-badge"
+                        aria-live="polite"
+                    >
+                        0
+                    </span>
+                </button>
+
+                <!-- Cart -->
+                <button
+                    type="button"
+                    class="cart-icon-wrapper"
+                    id="cart-btn"
+                    aria-label="Open cart"
+                    aria-controls="cart-drawer"
+                    aria-expanded="false"
+                >
+                    <i
+                        class="fa-solid fa-cart-shopping"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span
+                        class="cart-badge"
+                        id="cart-badge"
+                        aria-live="polite"
+                    >
+                        0
+                    </span>
+                </button>
+
+                <!-- Dark Mode -->
+                <button
+                    type="button"
+                    id="dark-mode-btn"
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                >
+                    <i
+                        class="fa-solid fa-moon"
+                        aria-hidden="true"
+                    ></i>
+                </button>
+
+                <!-- User Wrapper -->
+                <div class="user-wrapper">
+
+                    <!-- User Icon -->
+                    <button
+                        type="button"
+                        id="user-btn"
+                        aria-label="Open user menu"
+                        aria-controls="user-menu"
+                        aria-expanded="false"
+                    >
+                        <i
+                            class="fa-solid fa-user"
+                            aria-hidden="true"
+                        ></i>
+                    </button>
+
+                    <!-- User Dropdown -->
+                    <div
+                        class="user-menu"
+                        id="user-menu"
+                        hidden
+                    >
+
+                        <!-- User Information -->
+                        <div class="user-info">
+
+                            <i
+                                class="fa-solid fa-circle-user"
+                                aria-hidden="true"
+                            ></i>
+
+                            <div>
+                                <h3 id="profile-name">
+                                    Omar
+                                </h3>
+
+                                <span id="profile-role">
+                                    User
+                                </span>
+                            </div>
+
+                        </div>
+
+                        
+                        <!-- Menu Links -->
+                        <div class="user-menu-links">
+
+                            <a href="profile.html">
+                                <i
+                                    class="fa-solid fa-user-gear"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <span>
+                                    Profile Settings
+                                </span>
+                            </a>
+
+                            <a
+                                href="orders.html"
+                                id="my-orders-link"
+                            >
+                                <i
+                                    class="fa-solid fa-box"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <span>
+                                    My Orders
+                                </span>
+                            </a>
+
+                            <a
+                                href="change-password.html"
+                                id="change-password-link"
+                            >
+                                <i
+                                    class="fa-solid fa-lock"
+                                    aria-hidden="true"
+                                ></i>
+
+                                <span>
+                                    Change Password
+                                </span>
+                            </a>
+
+                        </div>
+
+                        <!-- Logout -->
+                        <button
+                            type="button"
+                            id="logout-btn"
+                        >
+                            <i
+                                class="fa-solid fa-right-from-bracket"
+                                aria-hidden="true"
+                            ></i>
+
+                            <span>
+                                Logout
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+        <!-- HOME CONTENT -->
+        <div class="main">
+
+            <div class="main_content">
+
+                <div class="main_text">
+
+                    <h1>
+                        NIKE<br>
+                        <span>Collection</span>
+                    </h1>
+
+                    <p>
+                        Discover premium footwear designed for comfort,
+                        performance, and everyday style. Find your perfect
+                        pair and take every step with confidence.
+                    </p>
+
+                </div>
+
+                <div class="main_image">
+                    <img
+                        src="image/shoes.png"
+                        alt="Featured Nike shoes"
+                        loading="eager"
+                    >
+                </div>
+
+            </div>
+
+            <!-- Social Icons -->
+            <div
+                class="social_icon"
+                aria-label="Social media links"
+            >
+
+                <a
+                    href="https://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <i
+                        class="fa-brands fa-facebook-f"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                >
+                    <i
+                        class="fa-brands fa-twitter"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i
+                        class="fa-brands fa-instagram"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i
+                        class="fa-brands fa-linkedin-in"
+                        aria-hidden="true"
+                    ></i>
+                </a>
+
+            </div>
+
+            <!-- Shop Button -->
+            <div class="button">
+
+                <a href="#Products">
+                    SHOP NOW
+                </a>
+
+                <i
+                    class="fa-solid fa-chevron-right"
+                    aria-hidden="true"
+                ></i>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <main>
+
+        <!-- =========================================================
+             PRODUCTS
+        ========================================================== -->
+
+        <section
+            class="products"
+            id="Products"
+            aria-labelledby="products-title"
+        >
+
+            <h1 id="products-title">
+                Products
+            </h1>
+
+            <!-- Product Controls -->
+            <div
+                class="products-toolbar"
+                aria-label="Product filters"
+            >
+
+                <label
+                    for="product-search"
+                    class="sr-only"
+                >
+                    Search products
+                </label>
+
+                <input
+                    type="search"
+                    id="product-search"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                >
+
+                <label
+                    for="product-sort"
+                    class="sr-only"
+                >
+                    Sort products
+                </label>
+
+                <select id="product-sort">
+
+                    <option value="default">
+                        Sort by
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="name">
+                        Name: A to Z
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                class="box"
+                id="products-container"
+            >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Product 1 -->
+                <article
+                    class="card"
+                    data-id="shoe-1"
+                    data-name="Nike Air Max 1"
+                    data-price="100.99"
+                    data-stock="12"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Air Max 1 to favorites"
+                            aria-pressed="false"
+                        >
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Air Max 1"
+                        >
+                            <i
+                                class="fa-solid fa-share"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes1.png"
+                            alt="Nike Air Max 1"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE AIR MAX 1
+                        </h2>
+
+                        <p>
+                            Comfortable Nike shoes for everyday
+                            performance and style.
+                        </p>
+
+                        <h3>
+                            $100.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="5 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge in-stock">
+                            In Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article
+                    class="card"
+                    data-id="shoe-2"
+                    data-name="Nike Air Force"
+                    data-price="200.99"
+                    data-stock="8"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Air Force to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Air Force"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes2.png"
+                            alt="Nike Air Force"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE AIR FORCE
+                        </h2>
+
+                        <p>
+                            Classic design with reliable comfort
+                            for daily use.
+                        </p>
+
+                        <h3>
+                            $200.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="4.5 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge in-stock">
+                            In Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article
+                    class="card"
+                    data-id="shoe-3"
+                    data-name="Nike Revolution"
+                    data-price="175.99"
+                    data-stock="5"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Revolution to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Revolution"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes3.png"
+                            alt="Nike Revolution"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE REVOLUTION
+                        </h2>
+
+                        <p>
+                            Lightweight footwear built for movement
+                            and flexibility.
+                        </p>
+
+                        <h3>
+                            $175.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="3.5 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge low-stock">
+                            Low Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article
+                    class="card"
+                    data-id="shoe-4"
+                    data-name="Nike Court Vision"
+                    data-price="120.99"
+                    data-stock="10"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Court Vision to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Court Vision"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes4.png"
+                            alt="Nike Court Vision"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE COURT VISION
+                        </h2>
+
+                        <p>
+                            A modern everyday sneaker inspired
+                            by classic court style.
+                        </p>
+
+                        <h3>
+                            $120.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="4 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge in-stock">
+                            In Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 5 -->
+                <article
+                    class="card"
+                    data-id="shoe-5"
+                    data-name="Nike Dunk Low"
+                    data-price="150.99"
+                    data-stock="15"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Dunk Low to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Dunk Low"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes5.png"
+                            alt="Nike Dunk Low"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE DUNK LOW
+                        </h2>
+
+                        <p>
+                            Street-ready style with a comfortable
+                            everyday fit.
+                        </p>
+
+                        <h3>
+                            $150.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="5 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge in-stock">
+                            In Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 6 -->
+                <article
+                    class="card"
+                    data-id="shoe-6"
+                    data-name="Nike Pegasus"
+                    data-price="220.99"
+                    data-stock="4"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Pegasus to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Pegasus"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes6.png"
+                            alt="Nike Pegasus"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE PEGASUS
+                        </h2>
+
+                        <p>
+                            Responsive cushioning for running
+                            and active lifestyles.
+                        </p>
+
+                        <h3>
+                            $220.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="4 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge low-stock">
+                            Low Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 7 -->
+                <article
+                    class="card"
+                    data-id="shoe-7"
+                    data-name="Nike Air Zoom"
+                    data-price="110.99"
+                    data-stock="7"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Air Zoom to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Air Zoom"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes.png"
+                            alt="Nike Air Zoom"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE AIR ZOOM
+                        </h2>
+
+                        <p>
+                            Sporty footwear with a simple design
+                            and everyday comfort.
+                        </p>
+
+                        <h3>
+                            $110.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="3 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge in-stock">
+                            In Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                        >
+                            Add To Cart
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 8 -->
+                <article
+                    class="card"
+                    data-id="shoe-8"
+                    data-name="Nike Blazer"
+                    data-price="150.99"
+                    data-stock="0"
+                >
+
+                    <div class="small_card">
+
+                        <button
+                            type="button"
+                            class="favorite-btn"
+                            aria-label="Add Nike Blazer to favorites"
+                            aria-pressed="false"
+                        >
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                        </button>
+
+                        <button
+                            type="button"
+                            class="share-btn"
+                            aria-label="Share Nike Blazer"
+                        >
+                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="image">
+                        <img
+                            src="image/shoes7.png"
+                            alt="Nike Blazer"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="products_text">
+
+                        <h2>
+                            NIKE BLAZER
+                        </h2>
+
+                        <p>
+                            Classic-inspired sneaker with a clean
+                            and versatile look.
+                        </p>
+
+                        <h3>
+                            $150.99
+                        </h3>
+
+                        <div
+                            class="products_star"
+                            aria-label="4 out of 5 stars"
+                        >
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="stock-badge out-of-stock">
+                            Out of Stock
+                        </span>
+
+                        <button
+                            type="button"
+                            class="btn add-to-cart-btn"
+                            disabled
+                        >
+                            Out of Stock
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p
+                id="no-products-message"
+                hidden
+            >
+                No products found.
+            </p>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =========================================================
+             ABOUT
+        ========================================================== -->
+
+        <section
+            class="about"
+            id="About"
+            aria-labelledby="about-title"
+        >
+
+            <h1 id="about-title">
+                Web<span>About</span>
+            </h1>
+
+            <div class="about_main">
+
+                <div class="about_image">
+
+                    <div
+                        class="about_small_image"
+                        aria-label="Choose product image"
+                    >
+
+                        <button
+                            type="button"
+                            class="about-thumb-btn"
+                            aria-label="Show red shoe image 1"
+                        >
+                            <img
+                                src="image/red_shoes1.png"
+                                alt="Red Shoe 1"
+                                class="about-thumb"
+                            >
+                        </button>
+
+                        <button
+                            type="button"
+                            class="about-thumb-btn"
+                            aria-label="Show red shoe image 2"
+                        >
+                            <img
+                                src="image/red_shoes2.png"
+                                alt="Red Shoe 2"
+                                class="about-thumb"
+                            >
+                        </button>
+
+                        <button
+                            type="button"
+                            class="about-thumb-btn"
+                            aria-label="Show red shoe image 3"
+                        >
+                            <img
+                                src="image/red_shoes3.png"
+                                alt="Red Shoe 3"
+                                class="about-thumb"
+                            >
+                        </button>
+
+                        <button
+                            type="button"
+                            class="about-thumb-btn"
+                            aria-label="Show red shoe image 4"
+                        >
+                            <img
+                                src="image/red_shoes4.png"
+                                alt="Red Shoe 4"
+                                class="about-thumb"
+                            >
+                        </button>
+
+                    </div>
+
+                    <div class="image_contaner">
+
+                        <img
+                            src="image/red_shoes1.png"
+                            id="imagebox"
+                            alt="Red Nike Shoe"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="about_text">
+
+                    <p>
+                        We bring together style, comfort, and performance
+                        to help you find shoes that match your lifestyle.
+                        Explore our collection and enjoy a simple shopping
+                        experience from browsing to delivery.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <a
+                href="#Products"
+                class="about_btn"
+            >
+                Shop Now
+            </a>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =========================================================
+             REVIEWS
+        ========================================================== -->
+
+        <section
+            class="review"
+            id="Review"
+            aria-labelledby="review-title"
+        >
+
+            <h1 id="review-title">
+                Customer's<span>review</span>
+            </h1>
+
+            <div class="review_box">
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/girl_dp1.jpg"
+                                    alt="Customer Ranidi Lochana"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    Ranidi Lochana
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="4.5 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            Great quality and a comfortable fit.
+                            The shopping experience was smooth.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/man_dp1.jpg"
+                                    alt="Customer Sayuru Tharanga"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    Sayuru Tharanga
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="4 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            The shoes look exactly like the pictures
+                            and arrived on time.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/man_dp2.jpg"
+                                    alt="Customer Senuda Dilwan"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    Senuda Dilwan
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="3.5 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            Good variety of products and helpful
+                            customer support.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="review_box">
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/gir_dp3.jpg"
+                                    alt="Customer Kaveesha Vidurangi"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    Kaveesha Vidurangi
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="3.5 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            The design is stylish and the shoes are
+                            comfortable for daily use.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/gir_dp2.jpg"
+                                    alt="Customer John Deo"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    John Deo
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="4.5 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            Excellent style and a very easy
+                            ordering process.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="review_card">
+
+                    <div class="card_top">
+
+                        <div class="profile">
+
+                            <div class="profile_image">
+                                <img
+                                    src="image/man_dp3.jpg"
+                                    alt="Customer Charith Aruna"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="name">
+
+                                <strong>
+                                    Charith Aruna
+                                </strong>
+
+                                <div
+                                    class="like"
+                                    aria-label="4.5 out of 5 stars"
+                                >
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="comment">
+                        <p>
+                            Fast delivery and good product quality.
+                            I would shop again.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- =========================================================
+             SERVICES
+        ========================================================== -->
+
+        <section
+            class="services"
+            id="Services"
+            aria-labelledby="services-title"
+        >
+
+            <h1 id="services-title">
+                our<span>services</span>
+            </h1>
+
+            <div class="services_cards">
+
+                <article class="services_box">
+
+                    <i
+                        class="fa-solid fa-truck-fast"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        Fast Delivery
+                    </h3>
+
+                    <p>
+                        Receive your order quickly and safely.
+                    </p>
+
+                </article>
+
+
+                <article class="services_box">
+
+                    <i
+                        class="fa-solid fa-rotate-left"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        10 Days Replacement
+                    </h3>
+
+                    <p>
+                        Request a replacement within 10 days
+                        according to our policy.
+                    </p>
+
+                </article>
+
+
+                <article class="services_box">
+
+                    <i
+                        class="fa-solid fa-headset"
+                        aria-hidden="true"
+                    ></i>
+
+                    <h3>
+                        24 x 7 Support
+                    </h3>
+
+                    <p>
+                        Our support team is ready to help
+                        with your questions.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+<footer>
+  <div class="footer_main">
+    
+    <!-- Column 1: About Section -->
+    <div class="tag">
+      <h1>About Us</h1>
+      <p>We provide the best services and solutions to enhance your experience with high quality and dedication.</p>
+      <div class="social_link">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="tag">
+      <h1>Quick Links</h1>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i> About</a>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i> Services</a>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+    </div>
+
+    <!-- Column 3: Newsletter -->
+    <div class="tag">
+      <h1>Newsletter</h1>
+      <p>Subscribe to our newsletter to receive the latest updates and offers.</p>
+      <form action="#">
+        <div class="search_bar">
+          <input type="email" placeholder="Enter your email..." required>
+          <button type="submit" id="newsletter-btn">Subscribe</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =========================================================
+         LOGIN MODAL
+    ========================================================== -->
+
+    <section
+        class="login"
+        id="login"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="login-title"
+        hidden
+    >
+
+        <button
+            type="button"
+            class="close-login"
+            aria-label="Close login"
+        >
+            ×
+        </button>
+
+        <div class="login_form">
+
+            <div class="left">
+
+                <img
+                    src="image/logshoes.png"
+                    alt="Nike Shoes"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="right">
+
+                <h1 id="login-title">
+                    Welcome Back
+                </h1>
+
+                <form
+                    class="login-form"
+                    id="login-form"
+                    novalidate
+                >
+
+                    <label for="username">
+                        User Name
+                    </label>
+
+                    <div class="user">
+
+                        <i
+                            class="fa-solid fa-user"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="text"
+                            name="user"
+                            id="username"
+                            class="username"
+                            placeholder="User Name"
+                            autocomplete="username"
+                            required
+                        >
+
+                    </div>
+
+
+                    <label
+                        for="password"
+                        class="password_tag"
+                    >
+                        Password
+                    </label>
+
+                    <div class="password">
+
+                        <i
+                            class="fa-solid fa-lock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="pass"
+                            placeholder="Password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <label
+                        class="remember-label"
+                        for="remember-me"
+                    >
+
+                        <input
+                            type="checkbox"
+                            id="remember-me"
+                            name="remember-me"
+                        >
+
+                        Remember me
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="login_btn"
+                    >
+                        Login
+                    </button>
+
+
+                    <div
+                        class="loging_icon"
+                        aria-label="Social login options"
+                    >
+
+                        <a
+                            href="#"
+                            aria-label="Login with Google"
+                        >
+                            <img
+                                src="image/google.png"
+                                alt="Google"
+                            >
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="Login with Facebook"
+                        >
+                            <img
+                                src="image/facebook.png"
+                                alt="Facebook"
+                            >
+                        </a>
+
+                        <a
+                            href="#"
+                            aria-label="Login with Twitter"
+                        >
+                            <img
+                                src="image/twitter.png"
+                                alt="Twitter"
+                            >
+                        </a>
+
+                    </div>
+
+
+                    <div class="signup-link">
+
+                        <p>
+                            You don't have an account?
+
+                            <button
+                                type="button"
+                                id="show-signup"
+                            >
+                                Sign Up
+                            </button>
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- =========================================================
+         SIGNUP MODAL
+    ========================================================== -->
+
+    <section
+        class="signup"
+        id="signup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="signup-title"
+        hidden
+    >
+
+        <button
+            type="button"
+            class="close-signup"
+            aria-label="Close signup"
+        >
+            ×
+        </button>
+
+        <div class="signup_form">
+
+            <h1 id="signup-title">
+                Create Account
+            </h1>
+
+            <form
+                id="signup-form"
+                novalidate
+            >
+
+                <label for="signup-username">
+                    User Name
+                </label>
+
+                <div class="signup_input">
+
+                    <i
+                        class="fa-solid fa-user"
+                        aria-hidden="true"
+                    ></i>
+
+                    <input
+                        type="text"
+                        id="signup-username"
+                        name="username"
+                        placeholder="Create username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <label for="signup-password">
+                    Password
+                </label>
+
+                <div class="signup_input">
+
+                    <i
+                        class="fa-solid fa-lock"
+                        aria-hidden="true"
+                    ></i>
+
+                    <input
+                        type="password"
+                        id="signup-password"
+                        name="password"
+                        placeholder="Create password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+
+                <div class="signup_input">
+
+                    <i
+                        class="fa-solid fa-lock"
+                        aria-hidden="true"
+                    ></i>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirm password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="signup_btn"
+                >
+                    Sign Up
+                </button>
+
+            </form>
+
+
+            <p class="login-link">
+
+                Already have an account?
+
+                <button
+                    type="button"
+                    id="show-login"
+                >
+                    Login
+                </button>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CART DRAWER
+    ========================================================== -->
+
+    <aside
+        id="cart-drawer"
+        aria-hidden="true"
+        aria-labelledby="cart-title"
+        hidden
+    >
+
+        <button
+            type="button"
+            class="close-cart"
+            aria-label="Close cart"
+        >
+            ×
+        </button>
+
+        <h2 id="cart-title">
+            Your Cart
+        </h2>
+
+        <div
+            class="cart-items"
+            aria-live="polite"
+        >
+
+            <p class="empty-cart-message">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+        <h3>
+            Total:
+
+            <span id="cart-total">
+                $0.00
+            </span>
+        </h3>
+
+        <button
+            type="button"
+            id="checkout-btn"
+            disabled
+        >
+            Proceed to Checkout
+        </button>
+
+    </aside>
+
+
+    <!-- =========================================================
+         WISHLIST DRAWER
+    ========================================================== -->
+
+    <aside
+        id="wishlist-drawer"
+        aria-hidden="true"
+        aria-labelledby="wishlist-title"
+        hidden
+    >
+
+        <button
+            type="button"
+            class="close-wishlist"
+            aria-label="Close wishlist"
+        >
+            ×
+        </button>
+
+        <h2 id="wishlist-title">
+            Your Wishlist
+        </h2>
+
+        <div
+            class="wishlist-items"
+            aria-live="polite"
+        >
+
+            <p class="empty-wishlist-message">
+                Your wishlist is empty.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Overlay -->
+    <div
+        class="cart-overlay"
+        id="cart-overlay"
+        hidden
+    ></div>
+
+
+    <!-- Toast Notifications -->
+    <div
+        id="toast"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        hidden
+    ></div>
+
+</body>
+</html>
