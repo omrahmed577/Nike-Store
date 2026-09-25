@@ -1880,17 +1880,32 @@ body.dark-mode .stock-badge.out-of-stock {
 .signup {
     position: fixed;
     inset: 0;
+
     width: 100vw;
     height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     padding: 30px;
     margin: 0;
+
     z-index: 1000;
+
+    /* الصورة تغطي الشاشة كلها */
+    background-image: url("/image/login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
     box-sizing: border-box;
 }
 
@@ -1932,27 +1947,21 @@ body.dark-mode .stock-badge.out-of-stock {
    LOGIN FORM
    ========================================================= */
 .login_form {
-    width: 100vw;
+    width: 100%;
     max-width: 1100px;
-    height: auto;
-    max-height: 90vh;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 30px;
 
-    /* Same corrected path as above */
-    background-image: url("/image/login_bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     position: relative;
-    border-radius: 0px;
-    overflow-y: auto;
-    box-shadow: none;
-}
 
+    /* لا يوجد background-image هنا */
+
+    border-radius: 20px;
+    overflow: hidden;
+}
 .login_form .left {
     display: flex;
     align-items: center;
