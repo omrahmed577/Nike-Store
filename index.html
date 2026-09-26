@@ -13,7 +13,12 @@
     <title>Shoes - Just Do It</title>
 
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="image/logo.png" type="image/png">
+
+    <link
+        rel="shortcut icon"
+        href="image/logo.png"
+        type="image/png"
+    >
 
     <link
         rel="stylesheet"
@@ -23,54 +28,103 @@
         referrerpolicy="no-referrer"
     >
 
- <script type="module" src="./js/main.js"></script>
-    </head>
+    <script
+        type="module"
+        src="./js/main.js"
+    ></script>
+</head>
 
 <body>
 
     <!-- =========================================================
-         NAVBAR + HOME
+         HOME
     ========================================================== -->
 
-    <section id="Home" aria-label="Home section">
+    <section
+        id="Home"
+        aria-label="Home section"
+    >
+
+        <!-- =====================================================
+             NAVBAR
+        ====================================================== -->
 
         <nav aria-label="Main navigation">
 
             <!-- Logo -->
             <div class="logo">
-                <a href="#Home" aria-label="Go to homepage">
+
+                <a
+                    href="#Home"
+                    aria-label="Go to homepage"
+                >
                     <h1>Shoe<span>s</span></h1>
                 </a>
+
             </div>
 
-            <!-- Navigation Links -->
-            <ul>
+
+            <!-- Desktop Navigation -->
+            <ul class="main-nav-list">
+
                 <li>
-                    <a href="#Home">Home</a>
+                    <a
+                        href="#Home"
+                        class="main-nav-link"
+                    >
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#Products">Products</a>
+                    <a
+                        href="#Products"
+                        class="main-nav-link"
+                    >
+                        Products
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#About">About</a>
+                    <a
+                        href="#About"
+                        class="main-nav-link"
+                    >
+                        About
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#Review">Review</a>
+                    <a
+                        href="#Review"
+                        class="main-nav-link"
+                    >
+                        Review
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#Services">Services</a>
+                    <a
+                        href="#Services"
+                        class="main-nav-link"
+                    >
+                        Services
+                    </a>
                 </li>
+
             </ul>
 
 
-
-            
             <!-- Navbar Icons -->
             <div class="icons">
+                 <button class="menu"> <i
+                        class="fa-solid fa-bars"
+                        aria-hidden="true"
+                    >
+                </i>   
+                </button>
+                
+
 
                 <!-- Wishlist -->
                 <button
@@ -95,6 +149,7 @@
                     </span>
                 </button>
 
+
                 <!-- Cart -->
                 <button
                     type="button"
@@ -118,6 +173,7 @@
                     </span>
                 </button>
 
+
                 <!-- Dark Mode -->
                 <button
                     type="button"
@@ -131,10 +187,10 @@
                     ></i>
                 </button>
 
-                <!-- User Wrapper -->
+
+                <!-- User -->
                 <div class="user-wrapper">
 
-                    <!-- User Icon -->
                     <button
                         type="button"
                         id="user-btn"
@@ -148,7 +204,8 @@
                         ></i>
                     </button>
 
-                    <!-- User Dropdown -->
+
+                    <!-- User Menu -->
                     <div
                         class="user-menu"
                         id="user-menu"
@@ -164,6 +221,7 @@
                             ></i>
 
                             <div>
+
                                 <h3 id="profile-name">
                                     Omar
                                 </h3>
@@ -171,15 +229,17 @@
                                 <span id="profile-role">
                                     User
                                 </span>
+
                             </div>
 
                         </div>
 
-                        
-                        <!-- Menu Links -->
+
+                        <!-- User Links -->
                         <div class="user-menu-links">
 
                             <a href="profile.html">
+
                                 <i
                                     class="fa-solid fa-user-gear"
                                     aria-hidden="true"
@@ -188,12 +248,15 @@
                                 <span>
                                     Profile Settings
                                 </span>
+
                             </a>
+
 
                             <a
                                 href="orders.html"
                                 id="my-orders-link"
                             >
+
                                 <i
                                     class="fa-solid fa-box"
                                     aria-hidden="true"
@@ -202,12 +265,15 @@
                                 <span>
                                     My Orders
                                 </span>
+
                             </a>
+
 
                             <a
                                 href="change-password.html"
                                 id="change-password-link"
                             >
+
                                 <i
                                     class="fa-solid fa-lock"
                                     aria-hidden="true"
@@ -216,15 +282,18 @@
                                 <span>
                                     Change Password
                                 </span>
+
                             </a>
 
                         </div>
+
 
                         <!-- Logout -->
                         <button
                             type="button"
                             id="logout-btn"
                         >
+
                             <i
                                 class="fa-solid fa-right-from-bracket"
                                 aria-hidden="true"
@@ -233,18 +302,24 @@
                             <span>
                                 Logout
                             </span>
+
                         </button>
 
                     </div>
+
                 </div>
 
             </div>
+
         </nav>
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
 
 
+        <!-- =====================================================
+             HOME CONTENT
+        ====================================================== -->
 
-        <!-- HOME CONTENT -->
         <div class="main">
 
             <div class="main_content">
@@ -264,15 +339,19 @@
 
                 </div>
 
+
                 <div class="main_image">
+
                     <img
                         src="image/shoes.png"
                         alt="Featured Nike shoes"
                         loading="eager"
                     >
+
                 </div>
 
             </div>
+
 
             <!-- Social Icons -->
             <div
@@ -292,6 +371,7 @@
                     ></i>
                 </a>
 
+
                 <a
                     href="https://twitter.com"
                     target="_blank"
@@ -304,6 +384,7 @@
                     ></i>
                 </a>
 
+
                 <a
                     href="https://www.instagram.com"
                     target="_blank"
@@ -315,6 +396,7 @@
                         aria-hidden="true"
                     ></i>
                 </a>
+
 
                 <a
                     href="https://www.linkedin.com"
@@ -329,6 +411,7 @@
                 </a>
 
             </div>
+
 
             <!-- Shop Button -->
             <div class="button">
@@ -349,11 +432,140 @@
     </section>
 
 
+    <!-- =========================================================
+         SIDEBAR OVERLAY
+    ========================================================== -->
+
+    <div
+        class="sidebar-overlay"
+        id="sidebar-overlay"
+    ></div>
+
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar"
+        aria-hidden="true"
+    >
+
+        <div class="sidebar-header">
+
+            <h2>
+                Shoes
+            </h2>
+
+            <button
+                type="button"
+                class="close-sidebar"
+                id="close-sidebar"
+                aria-label="Close menu"
+            >
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true"
+                ></i>
+            </button>
+
+        </div>
+
+
+        <nav
+            class="sidebar-nav"
+            aria-label="Mobile navigation"
+        >
+
+            <a
+                href="#Home"
+                class="sidebar-link"
+            >
+                <i
+                    class="fa-solid fa-house"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Home
+                </span>
+            </a>
+
+
+            <a
+                href="#Products"
+                class="sidebar-link"
+            >
+                <i
+                    class="fa-solid fa-shoe-prints"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Products
+                </span>
+            </a>
+
+
+            <a
+                href="#About"
+                class="sidebar-link"
+            >
+                <i
+                    class="fa-solid fa-circle-info"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    About
+                </span>
+            </a>
+
+
+            <a
+                href="#Review"
+                class="sidebar-link"
+            >
+                <i
+                    class="fa-solid fa-star"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Reviews
+                </span>
+            </a>
+
+
+            <a
+                href="#Services"
+                class="sidebar-link"
+            >
+                <i
+                    class="fa-solid fa-headset"
+                    aria-hidden="true"
+                ></i>
+
+                <span>
+                    Services
+                </span>
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
     <main>
 
-        <!-- =========================================================
+        <!-- =====================================================
              PRODUCTS
-        ========================================================== -->
+        ====================================================== -->
 
         <section
             class="products"
@@ -364,6 +576,7 @@
             <h1 id="products-title">
                 Products
             </h1>
+
 
             <!-- Product Controls -->
             <div
@@ -384,6 +597,7 @@
                     placeholder="Search products..."
                     autocomplete="off"
                 >
+
 
                 <label
                     for="product-sort"
@@ -415,24 +629,11 @@
             </div>
 
 
+            <!-- Products -->
             <div
                 class="box"
                 id="products-container"
             >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <!-- Product 1 -->
                 <article
@@ -470,13 +671,17 @@
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes1.png"
                             alt="Nike Air Max 1"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -497,11 +702,11 @@
                             class="products_star"
                             aria-label="5 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
 
                         <span class="stock-badge in-stock">
@@ -537,7 +742,7 @@
                             aria-label="Add Nike Air Force to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -545,18 +750,22 @@
                             class="share-btn"
                             aria-label="Share Nike Air Force"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes2.png"
                             alt="Nike Air Force"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -577,11 +786,11 @@
                             class="products_star"
                             aria-label="4.5 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
                         </div>
 
                         <span class="stock-badge in-stock">
@@ -617,7 +826,7 @@
                             aria-label="Add Nike Revolution to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -625,18 +834,22 @@
                             class="share-btn"
                             aria-label="Share Nike Revolution"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes3.png"
                             alt="Nike Revolution"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -657,11 +870,11 @@
                             class="products_star"
                             aria-label="3.5 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
 
                         <span class="stock-badge low-stock">
@@ -697,7 +910,7 @@
                             aria-label="Add Nike Court Vision to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -705,18 +918,22 @@
                             class="share-btn"
                             aria-label="Share Nike Court Vision"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes4.png"
                             alt="Nike Court Vision"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -737,11 +954,11 @@
                             class="products_star"
                             aria-label="4 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
 
                         <span class="stock-badge in-stock">
@@ -777,7 +994,7 @@
                             aria-label="Add Nike Dunk Low to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -785,18 +1002,22 @@
                             class="share-btn"
                             aria-label="Share Nike Dunk Low"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes5.png"
                             alt="Nike Dunk Low"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -817,11 +1038,11 @@
                             class="products_star"
                             aria-label="5 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
 
                         <span class="stock-badge in-stock">
@@ -857,7 +1078,7 @@
                             aria-label="Add Nike Pegasus to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -865,18 +1086,22 @@
                             class="share-btn"
                             aria-label="Share Nike Pegasus"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes6.png"
                             alt="Nike Pegasus"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -897,11 +1122,11 @@
                             class="products_star"
                             aria-label="4 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
 
                         <span class="stock-badge low-stock">
@@ -937,7 +1162,7 @@
                             aria-label="Add Nike Air Zoom to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -945,18 +1170,22 @@
                             class="share-btn"
                             aria-label="Share Nike Air Zoom"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes.png"
                             alt="Nike Air Zoom"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -977,11 +1206,11 @@
                             class="products_star"
                             aria-label="3 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
 
                         <span class="stock-badge in-stock">
@@ -1017,7 +1246,7 @@
                             aria-label="Add Nike Blazer to favorites"
                             aria-pressed="false"
                         >
-                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
 
                         <button
@@ -1025,18 +1254,22 @@
                             class="share-btn"
                             aria-label="Share Nike Blazer"
                         >
-                            <i class="fa-solid fa-share" aria-hidden="true"></i>
+                            <i class="fa-solid fa-share"></i>
                         </button>
 
                     </div>
 
+
                     <div class="image">
+
                         <img
                             src="image/shoes7.png"
                             alt="Nike Blazer"
                             loading="lazy"
                         >
+
                     </div>
+
 
                     <div class="products_text">
 
@@ -1057,11 +1290,11 @@
                             class="products_star"
                             aria-label="4 out of 5 stars"
                         >
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-solid fa-star" aria-hidden="true"></i>
-                            <i class="fa-regular fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                         </div>
 
                         <span class="stock-badge out-of-stock">
@@ -1082,6 +1315,7 @@
 
             </div>
 
+
             <p
                 id="no-products-message"
                 hidden
@@ -1092,26 +1326,9 @@
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- =========================================================
+        <!-- =====================================================
              ABOUT
-        ========================================================== -->
+        ====================================================== -->
 
         <section
             class="about"
@@ -1122,6 +1339,7 @@
             <h1 id="about-title">
                 Web<span>About</span>
             </h1>
+
 
             <div class="about_main">
 
@@ -1144,6 +1362,7 @@
                             >
                         </button>
 
+
                         <button
                             type="button"
                             class="about-thumb-btn"
@@ -1156,6 +1375,7 @@
                             >
                         </button>
 
+
                         <button
                             type="button"
                             class="about-thumb-btn"
@@ -1167,6 +1387,7 @@
                                 class="about-thumb"
                             >
                         </button>
+
 
                         <button
                             type="button"
@@ -1182,6 +1403,7 @@
 
                     </div>
 
+
                     <div class="image_contaner">
 
                         <img
@@ -1193,6 +1415,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="about_text">
 
@@ -1207,6 +1430,7 @@
 
             </div>
 
+
             <a
                 href="#Products"
                 class="about_btn"
@@ -1217,23 +1441,9 @@
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- =========================================================
+        <!-- =====================================================
              REVIEWS
-        ========================================================== -->
+        ====================================================== -->
 
         <section
             class="review"
@@ -1245,8 +1455,10 @@
                 Customer's<span>review</span>
             </h1>
 
+
             <div class="review_box">
 
+                <!-- Review 1 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1254,12 +1466,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/girl_dp1.jpg"
                                     alt="Customer Ranidi Lochana"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1271,11 +1486,11 @@
                                     class="like"
                                     aria-label="4.5 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
                                 </div>
 
                             </div>
@@ -1284,16 +1499,20 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             Great quality and a comfortable fit.
                             The shopping experience was smooth.
                         </p>
+
                     </div>
 
                 </article>
 
 
+                <!-- Review 2 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1301,12 +1520,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/man_dp1.jpg"
                                     alt="Customer Sayuru Tharanga"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1318,11 +1540,11 @@
                                     class="like"
                                     aria-label="4 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
-                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
                                 </div>
 
                             </div>
@@ -1331,16 +1553,20 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             The shoes look exactly like the pictures
                             and arrived on time.
                         </p>
+
                     </div>
 
                 </article>
 
 
+                <!-- Review 3 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1348,12 +1574,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/man_dp2.jpg"
                                     alt="Customer Senuda Dilwan"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1365,11 +1594,11 @@
                                     class="like"
                                     aria-label="3.5 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
-                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
-                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
                                 </div>
 
                             </div>
@@ -1378,11 +1607,14 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             Good variety of products and helpful
                             customer support.
                         </p>
+
                     </div>
 
                 </article>
@@ -1392,6 +1624,7 @@
 
             <div class="review_box">
 
+                <!-- Review 4 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1399,12 +1632,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/gir_dp3.jpg"
                                     alt="Customer Kaveesha Vidurangi"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1416,11 +1652,11 @@
                                     class="like"
                                     aria-label="3.5 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
-                                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <i class="fa-regular fa-star"></i>
                                 </div>
 
                             </div>
@@ -1429,16 +1665,20 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             The design is stylish and the shoes are
                             comfortable for daily use.
                         </p>
+
                     </div>
 
                 </article>
 
 
+                <!-- Review 5 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1446,12 +1686,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/gir_dp2.jpg"
                                     alt="Customer John Deo"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1463,11 +1706,11 @@
                                     class="like"
                                     aria-label="4.5 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
                                 </div>
 
                             </div>
@@ -1476,16 +1719,20 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             Excellent style and a very easy
                             ordering process.
                         </p>
+
                     </div>
 
                 </article>
 
 
+                <!-- Review 6 -->
                 <article class="review_card">
 
                     <div class="card_top">
@@ -1493,12 +1740,15 @@
                         <div class="profile">
 
                             <div class="profile_image">
+
                                 <img
                                     src="image/man_dp3.jpg"
                                     alt="Customer Charith Aruna"
                                     loading="lazy"
                                 >
+
                             </div>
+
 
                             <div class="name">
 
@@ -1510,11 +1760,11 @@
                                     class="like"
                                     aria-label="4.5 out of 5 stars"
                                 >
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
                                 </div>
 
                             </div>
@@ -1523,11 +1773,14 @@
 
                     </div>
 
+
                     <div class="comment">
+
                         <p>
                             Fast delivery and good product quality.
                             I would shop again.
                         </p>
+
                     </div>
 
                 </article>
@@ -1537,21 +1790,9 @@
         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- =========================================================
+        <!-- =====================================================
              SERVICES
-        ========================================================== -->
+        ====================================================== -->
 
         <section
             class="services"
@@ -1562,6 +1803,7 @@
             <h1 id="services-title">
                 our<span>services</span>
             </h1>
+
 
             <div class="services_cards">
 
@@ -1627,73 +1869,122 @@
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- =========================================================
          FOOTER
     ========================================================== -->
 
-<footer>
-  <div class="footer_main">
-    
-    <!-- Column 1: About Section -->
-    <div class="tag">
-      <h1>About Us</h1>
-      <p>We provide the best services and solutions to enhance your experience with high quality and dedication.</p>
-      <div class="social_link">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-      </div>
-    </div>
+    <footer>
 
-    <!-- Column 2: Quick Links -->
-    <div class="tag">
-      <h1>Quick Links</h1>
-      <a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a>
-      <a href="#"><i class="fa-solid fa-chevron-right"></i> About</a>
-      <a href="#"><i class="fa-solid fa-chevron-right"></i> Services</a>
-      <a href="#"><i class="fa-solid fa-chevron-right"></i> Contact</a>
-    </div>
+        <div class="footer_main">
 
-    <!-- Column 3: Newsletter -->
-    <div class="tag">
-      <h1>Newsletter</h1>
-      <p>Subscribe to our newsletter to receive the latest updates and offers.</p>
-      <form action="#">
-        <div class="search_bar">
-          <input type="email" placeholder="Enter your email..." required>
-          <button type="submit" id="newsletter-btn">Subscribe</button>
+            <!-- About -->
+            <div class="tag">
+
+                <h1>
+                    About Us
+                </h1>
+
+                <p>
+                    We provide the best services and solutions
+                    to enhance your experience with high quality
+                    and dedication.
+                </p>
+
+
+                <div class="social_link">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="tag">
+
+                <h1>
+                    Quick Links
+                </h1>
+
+                <a href="#Home">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Home
+                </a>
+
+                <a href="#About">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    About
+                </a>
+
+                <a href="#Services">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Services
+                </a>
+
+                <a href="#Products">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    Products
+                </a>
+
+            </div>
+
+
+            <!-- Newsletter -->
+            <div class="tag">
+
+                <h1>
+                    Newsletter
+                </h1>
+
+                <p>
+                    Subscribe to our newsletter to receive
+                    the latest updates and offers.
+                </p>
+
+
+                <form action="#">
+
+                    <div class="search_bar">
+
+                        <input
+                            type="email"
+                            id="newsletter-email"
+                            placeholder="Enter your email..."
+                            autocomplete="email"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            id="newsletter-btn"
+                        >
+                            Subscribe
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
         </div>
-      </form>
-    </div>
 
-  </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
 
     <!-- =========================================================
@@ -1717,6 +2008,7 @@
             ×
         </button>
 
+
         <div class="login_form">
 
             <div class="left">
@@ -1736,6 +2028,7 @@
                     Welcome Back
                 </h1>
 
+
                 <form
                     class="login-form"
                     id="login-form"
@@ -1745,6 +2038,7 @@
                     <label for="username">
                         User Name
                     </label>
+
 
                     <div class="user">
 
@@ -1772,6 +2066,7 @@
                     >
                         Password
                     </label>
+
 
                     <div class="password">
 
@@ -1832,6 +2127,7 @@
                             >
                         </a>
 
+
                         <a
                             href="#"
                             aria-label="Login with Facebook"
@@ -1841,6 +2137,7 @@
                                 alt="Facebook"
                             >
                         </a>
+
 
                         <a
                             href="#"
@@ -1858,6 +2155,7 @@
                     <div class="signup-link">
 
                         <p>
+
                             You don't have an account?
 
                             <button
@@ -1866,6 +2164,7 @@
                             >
                                 Sign Up
                             </button>
+
                         </p>
 
                     </div>
@@ -1877,12 +2176,6 @@
         </div>
 
     </section>
-
-
-
-
-
-
 
 
     <!-- =========================================================
@@ -1906,11 +2199,13 @@
             ×
         </button>
 
+
         <div class="signup_form">
 
             <h1 id="signup-title">
                 Create Account
             </h1>
+
 
             <form
                 id="signup-form"
@@ -1920,6 +2215,7 @@
                 <label for="signup-username">
                     User Name
                 </label>
+
 
                 <div class="signup_input">
 
@@ -1944,6 +2240,7 @@
                     Password
                 </label>
 
+
                 <div class="signup_input">
 
                     <i
@@ -1966,6 +2263,7 @@
                 <label for="confirm-password">
                     Confirm Password
                 </label>
+
 
                 <div class="signup_input">
 
@@ -2033,9 +2331,11 @@
             ×
         </button>
 
+
         <h2 id="cart-title">
             Your Cart
         </h2>
+
 
         <div
             class="cart-items"
@@ -2048,13 +2348,17 @@
 
         </div>
 
+
         <h3>
+
             Total:
 
             <span id="cart-total">
                 $0.00
             </span>
+
         </h3>
+
 
         <button
             type="button"
@@ -2086,9 +2390,11 @@
             ×
         </button>
 
+
         <h2 id="wishlist-title">
             Your Wishlist
         </h2>
+
 
         <div
             class="wishlist-items"
@@ -2104,7 +2410,10 @@
     </aside>
 
 
-    <!-- Overlay -->
+    <!-- =========================================================
+         CART OVERLAY
+    ========================================================== -->
+
     <div
         class="cart-overlay"
         id="cart-overlay"
@@ -2112,7 +2421,10 @@
     ></div>
 
 
-    <!-- Toast Notifications -->
+    <!-- =========================================================
+         TOAST
+    ========================================================== -->
+
     <div
         id="toast"
         role="status"
@@ -2122,4 +2434,4 @@
     ></div>
 
 </body>
-</html>
+</html> 
