@@ -9,6 +9,7 @@ import "./auth.js";
 import "./user-menu.js";
 import "./theme.js";
 import "./newsletter.js";
+import "./product-search.js";
 
 // ==========================================================================
 // ABOUT IMAGE SWITCHER
